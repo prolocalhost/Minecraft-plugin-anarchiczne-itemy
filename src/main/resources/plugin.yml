@@ -1,0 +1,24 @@
+name: localhost-anarchia
+version: '${version}'
+
+main: pl.localhost.anarchia.Main
+api-version: '1.20'
+load: POSTWORLD
+
+authors: [ Localhost ]
+website:
+  discord: localhost_127001
+
+commands:
+  anarchia:
+    aliases: [anarchiapvp, przedmioty, anarchiaitemy, aitemy]
+    description: Glowna komenda systemu unikalnych przedmiotow Anarchia.GG
+    permission: anarchia.use
+
+permissions:
+  anarchia.use:
+    description: Pozwala na przegladanie przedmiotow i korzystanie z nich
+    default: true
+  anarchia.admin:
+    description: Pozwala na nadawanie przedmiotow i zarzadzanie pluginem
+    default: op

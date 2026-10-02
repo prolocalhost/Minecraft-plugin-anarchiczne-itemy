@@ -1,0 +1,193 @@
+# ========================================================
+# localhost-anarchia - Autorski system przedmiotow Anarchia.GG
+# ========================================================
+
+prefix: "&8[&6&lAnarchia&8] &r"
+
+# Konfiguracja poszczegolnych przedmiotow
+items:
+  bombarda-maxima:
+    name: "&c&lBombarda Maxima"
+    material: FIRE_CHARGE
+    cooldown: 15
+    explosion-power: 4.5
+    break-obsidian: true
+    break-radius: 3
+    lore:
+      - "&7Rzucany ladunek pirotechniczny o poteznej sile razenia."
+      - ""
+      - " &8» &ePPM: &fWystrzel wybuchowy pocisk"
+      - " &8» &cEfekt: &7Niszczy obsydian i okoliczne bloki"
+      - " &8» &7Cooldown: &c%cooldown%s"
+      - ""
+      - "&c&oUnikalny gadzet bojowy Anarchia.GG"
+
+  anty-cobweb:
+    name: "&f&lAnty-Cobweb"
+    material: SHEARS
+    cooldown: 10
+    radius: 5
+    lore:
+      - "&7Niezbedny przedmiot do ucieczki z niebezpiecznych trapboxow."
+      - ""
+      - " &8» &ePPM: &fNatychmiastowo niszczy pajeczyny wokół Ciebie"
+      - " &8» &bPromien: &f%radius% kratek"
+      - " &8» &7Cooldown: &c%cooldown%s"
+      - ""
+      - "&f&oUnikalny gadzet bojowy Anarchia.GG"
+
+  trapbox:
+    name: "&e&lTrapbox &7(Rzucana Pajeczyna)"
+    material: COBWEB
+    cooldown: 20
+    trap-duration: 15 # Czas w sekundach po ktorym pajeczyny znikaja
+    lore:
+      - "&7Rzucany pocisk wiezacy cel w klatce z pajeczyn."
+      - ""
+      - " &8» &ePPM: &fWyrzuc trapbox w kierunku wroga"
+      - " &8» &cEfekt: &7Tworzy klatke z pajeczyn na %duration%s"
+      - " &8» &7Cooldown: &c%cooldown%s"
+      - ""
+      - "&e&oUnikalny gadzet bojowy Anarchia.GG"
+
+  boski-topor:
+    name: "&6&lBoski Topor"
+    material: NETHERITE_AXE
+    cooldown: 45
+    protection-duration: 3 # sekundy niesmiertelnosci (Resistance IV)
+    push-radius: 6
+    lore:
+      - "&7Starozytna bron dawnych wladcow anarchii."
+      - ""
+      - " &8» &ePPM: &fAktywuje &6Boska Ochone"
+      - " &8» &aEfekt: &7Chwilowa niesmiertelnosc (%duration%s)"
+      - " &8» &cOdrzut: &7Fala uderzeniowa odpycha wszystkich wrogow"
+      - " &8» &7Cooldown: &c%cooldown%s"
+      - ""
+      - "&6&oLegendarny przedmiot Anarchia.GG"
+
+  excalibur:
+    name: "&b&lExcalibur"
+    material: NETHERITE_SWORD
+    cooldown: 10
+    bonus-damage-per-5-kills: 1.0
+    max-bonus-damage: 8.0
+    lore:
+      - "&7Legendarny miecz, ktory rosnie w sile wraz z zabojstwami."
+      - ""
+      - " &8» &7Zabojstwa: &b%kills%"
+      - " &8» &ePPM: &bSwiety Piorun &7(bonusowe nieuchronne obrazenia)"
+      - " &8» &aPasywka: &7Zwieksza obrazenia za kazde kolejne zabojstwa"
+      - " &8» &7Cooldown PPM: &c%cooldown%s"
+      - ""
+      - "&b&oLegendarny przedmiot Anarchia.GG"
+
+  krew-wampira:
+    name: "&4&lKrew Wampira"
+    material: RED_DYE
+    cooldown: 12
+    heal-amount: 12.0 # 6 serc
+    regen-duration: 5
+    lifesteal-chance: 15 # procent szansy na kradziez serca przy ciosie
+    lore:
+      - "&7Mroczna mikstura wampirzych wladcow."
+      - ""
+      - " &8» &ePPM: &fWypij, aby uleczyc &c6 serc &fi zyskac &dRegeneracje II"
+      - " &8» &dPasywka: &715%% szans na wyssanie HP wrogowi podczas ataku"
+      - " &8» &7Cooldown: &c%cooldown%s"
+      - ""
+      - "&4&oMroczny eliksir Anarchia.GG"
+
+  kostka-rubika:
+    name: "&d&lKostka Rubika"
+    material: CONDUIT
+    cooldown: 25
+    nausea-duration: 5
+    lore:
+      - "&7Najbardziej irytujacy gadzet anarchiczny do trollowania wrogow na PvP."
+      - ""
+      - " &8» &ePPM / Cios: &fRzuc lub uderz wroga"
+      - " &8» &dEfekt: &7Losowo miesza sloty hotbara wroga + Nudnosci"
+      - " &8» &7Cooldown: &c%cooldown%s"
+      - ""
+      - "&d&oPrzedmiot do trollingu Anarchia.GG"
+
+  niszczyciel-bedrocka:
+    name: "&8&lNiszczyciel Bedrocka"
+    material: TNT
+    cooldown: 30
+    fuse-time: 3 # sekundy syczenia przed zniszczeniem
+    lore:
+      - "&7Specjalny ladunek kwasowo-wybuchowy rozpuszczajacy Bedrock."
+      - ""
+      - " &8» &ePPM na Bedrock: &fRozpoczyna proces rozpuszczania bloku (3s)"
+      - " &8» &cOgraniczenie: &7Nie niszczy najnizszej warstwy prozni!"
+      - " &8» &7Cooldown: &c%cooldown%s"
+      - ""
+      - "&8&oNiezwykly dynamit Anarchia.GG"
+
+  korona-anarchii:
+    name: "&6&lKorona Anarchii"
+    material: GOLDEN_HELMET
+    lore:
+      - "&7Krolewski helm prawowitego monarchy anarchii."
+      - ""
+      - " &8» &aPasywne efekty podczas noszenia:"
+      - "   &8* &cSila I"
+      - "   &8* &bSzybkosc I"
+      - "   &8* &eOdpornosc I"
+      - ""
+      - "&6&oLegendarna korona Anarchia.GG"
+
+  lizak-anarchii:
+    name: "&a&lLizak Anarchii"
+    material: COOKIE
+    cooldown: 60
+    lore:
+      - "&7Smaczny lizak bojowy dajacy ogromny przyplyw energii."
+      - ""
+      - " &8» &ePPM: &fZjedz lizaka w ulamku sekundy"
+      - " &8» &6Efekt: &eAbsorpcja IV &7+ &bSzybkosc II &7na 30 sekund"
+      - " &8» &7Cooldown: &c%cooldown%s"
+      - ""
+      - "&a&oBojowy slodycz Anarchia.GG"
+
+  kilof-anarchii:
+    name: "&5&lAnarchiczny Kilof &e☆∞"
+    material: NETHERITE_PICKAXE
+    keep-on-death: true
+    lore:
+      - "&7Niezniszczalny kilof z wieczna gwiazda ☆∞."
+      - ""
+      - " &8» &dZaklecia: &7Wydajnosc VII, Szczescie IV, Niezniszczalnosc X"
+      - " &8» &aCecha specjalna: &e&lPrzedmiot NIE WYPADA po smierci!"
+      - ""
+      - "&5&oWieczne narzedzie Anarchia.GG"
+
+# Wlaczenie/wylaczenie craftingu
+recipes:
+  enabled: true
+
+# Wiadomosci systemowe
+messages:
+  prefix: "&8[&6&lAnarchia&8] &r"
+  player-only: "&cTa komenda jest dostepna tylko dla graczy!"
+  no-permission: "&cBrak uprawnien do tej komendy!"
+  reload-success: "&aKonfiguracja pluginu localhost-anarchia zostala przeladowana!"
+  cooldown-actionbar: "&c&lCOOLDOWN! &7Odczekaj jeszcze &e%time%s&7!"
+  item-given: "&aNadano przedmiot &e%item% &7graczowi &b%player%&7!"
+  item-received: "&aOtrzymales unikalny przedmiot &e%item%&7!"
+  player-not-found: "&cNie znaleziono gracza o podanym nicku!"
+  item-not-found: "&cNie znaleziono przedmiotu o ID: &e%id%&c. Sprawdz &e/anarchia lista&c!"
+  anty-cobweb-success: "&a✔ Pomyślnie zniszczono &e%count% &apajeczyn wokół Ciebie!"
+  anty-cobweb-none: "&cW Twoim poblizu nie ma zadnych pajeczyn!"
+  bedrock-destroying: "&e&lUWAGA! &7Niszczenie bedrocka rozpoczete... Odczekaj &c3 sekundy&7!"
+  bedrock-destroyed: "&a✔ Bedrock zostal pomyslnie zniszczony!"
+  bedrock-void-deny: "&cNie mozesz niszczyc najnizszej warstwy bedrocka zabezpieczajacej przed proznia!"
+  bedrock-not-bedrock: "&cTen przedmiot dziala wylacznie na bloki Bedrocka!"
+  rubik-used: "&d✔ Wymieszano sloty w ekwipunku gracza &e%player%&d!"
+  rubik-victim: "&d&lZAWROTY GLOWY! &7Twoje sloty zostaly wymieszane przez Kostke Rubika!"
+  axe-shield-activated: "&6&lBOSKA OCHRONA! &7Zyskales chwilowa niesmiertelnosc i odepchnales wrogow!"
+  vampire-heal: "&4&lKREW WAMPIRA! &7Uleczono &c6 serc &7i zyskano regeneracje!"
+  excalibur-strike: "&b&lSWIETY CIOS! &7Piorun porazil wroga, zadajac bonusowe obrazenia!"
+  lollipop-eaten: "&a&lMNIAM! &7Lizak Anarchii dodal Ci dodatkowe zlote serca i szybkosc!"
